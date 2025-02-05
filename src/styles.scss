@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Calibri, sans-serif; }
+
+/* Global styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Calibri, sans-serif;
+}
+
+/* Declare colors as Sass variables */
+$primary-color: #ffc100;
+$secondary-color: #cc5500;
+$tertiary-color: #228B22;
+$background-color: #f8f9fa;
+$text-color: #313233;
+
+/* Button Styles */
+
+/* Primary Button */
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+      background-color: darken($primary-color, 10%);
+  }
+
+  &:focus {
+      outline: none;
+      box-shadow: 0 0 5px 2px rgba(255, 193, 0, 0.5); /* Focus ring */
+  }
+}
+
+/* Secondary Button */
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+      background-color: darken($secondary-color, 10%);
+  }
+
+  &:focus {
+      outline: none;
+      box-shadow: 0 0 5px 2px rgba(204, 85, 0, 0.5); /* Focus ring */
+  }
+}
+
+/* Tertiary Button */
+.button-tertiary {
+  background-color: var(--tertiary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+      background-color: darken($tertiary-color, 10%);
+  }
+
+  &:focus {
+      outline: none;
+      box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5); /* Focus ring */
+  }
+}
+
+/*Natural & Earthy Palette
+Forest Green (#228B22) – Harmonious with yellow
+Burnt Orange (#cc5500) – Warm and grounded
+Olive (#808000) – Earthy and deep
+Sand Beige (#f5deb3) – Soft and natural */
